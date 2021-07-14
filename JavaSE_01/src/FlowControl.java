@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class HelloWorld {
+public class FlowControl {
 
     /*Java规定，某个类定义的public static void main(String[] args)
     是Java程序固定入口方法，
