@@ -1,18 +1,23 @@
 import java.util.Scanner;
 
 public class HelloWorld {
-    /*Java规定，某个类定义的public static void main(String[] args)是Java程序的固定入口方法
-      Java程序总是从main方法开始执行*/
+
+    /*Java规定，某个类定义的public static void main(String[] args)
+    是Java程序固定入口方法，
+    Java程序总是从main方法开始执行*/
     public static void main(String args[]){
+
+        //HelloWorld
         String s = "Hello,郝宵";
         System.out.println(s);
         System.out.println("----------------");
 
-        //可以在定义数组时直接指定初始化的元素
-        int[] ints = new int[]{1,2};          //可简写为int[] ints = {1,2};
+        //int 数组
+        int[] ints = new int[]{1,2};          //可以在定义数组时直接指定初始化的元素，可简写为int[] ints = {1,2};
         System.out.println(ints.length);              //由编译器自动推算数组大小
         System.out.println("----------------");
 
+        //string 数组
         String[] strings = new String[]{"刘秀峰","柏汝强"};
         String s1 = strings[1];
         System.out.println(s1);
@@ -30,7 +35,7 @@ public class HelloWorld {
         System.out.println(name);
         System.out.println("----------------");
 
-        //if判断
+        //if-else
         int n = 90;
         if(n>=90)
             System.out.println("成绩优秀");        // 当if语句块只有一行语句时，可省略花括号{}，但不建议省略
