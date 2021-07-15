@@ -52,8 +52,60 @@ public class FlowControl {
         }
         System.out.println("----------------");
 
+        //switch多重选择
+        int option = 1;                             //String fruit = "apple";  switch (fruit){case "apple": ...}
+        switch (option){
+            case 1:
+                System.out.println("Selected 1");
+                System.out.println("----------------");
+                break;                              //Java12新语法使用->
+            case 2:
+                System.out.println("Selected 2");
+                System.out.println("----------------");
+                break;
+            case 3:
+                System.out.println("Selected 3");
+                System.out.println("----------------");
+                break;
+            //如果switch没有匹配到任何case，则不执行任何语句；但若设置了default，则执行default
+            default:
+                System.out.println("Not selected");
+                System.out.println("----------------");
+                break;
+        }
+
+        //do while实现1到100求和
+        int sum = 0;
+        int a = 1;
+        do{
+            sum =sum +a;
+            a++;
+        }while(a<=100);
+        System.out.println(sum);
+        System.out.println("----------------");
+
+        //for实现1到100求和
+        int sumf = 0;
+        for(int i=0;i<101;i++){
+            sumf=sumf+i;
+        }
+        System.out.println(sumf);
+        System.out.println("----------------");
+
+        //for each循环
+        int[] ns = {1,2,3};
+        //除数组外，for each循环能遍历所有“可迭代”数据类型，包括后面会介绍的List、Map等
+        for (int b:ns) {
+            System.out.println(b);
+        }
+        System.out.println("----------------");
+        /*  无论是while循环还是for循环，都可以使用break语句和continue语句(通常配合if使用)
+            break语句可以跳出当前循环；
+            break语句通常配合if，在满足条件时提前结束整个循环；
+            break语句总是跳出最近的一层循环；
+            continue语句可以提前结束本次循环；
+            continue语句通常配合if，在满足条件时提前结束本次循环。 */
+        
         //https://www.liaoxuefeng.com/wiki/1252599548343744/1259541030848864
-
-
     }
 }
