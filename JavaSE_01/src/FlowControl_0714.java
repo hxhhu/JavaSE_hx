@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
-public class FlowControl {
+public class FlowControl_0714 {
 
-    /*Java规定，某个类定义的public static void main(String[] args)
-    是Java程序固定入口方法，
-    Java程序总是从main方法开始执行*/
+    /* Java规定，某个类定义的public static void main(String[] args)或public static void main(String[] args)
+       是Java程序固定入口方法，Java程序总是从main方法开始执行 */
     public static void main(String args[]){
 
         //HelloWorld
@@ -105,7 +104,7 @@ public class FlowControl {
             break语句总是跳出最近的一层循环；
             continue语句可以提前结束本次循环；
             continue语句通常配合if，在满足条件时提前结束本次循环。 */
-        
+
         //https://www.liaoxuefeng.com/wiki/1252599548343744/1259541030848864
     }
 }
