@@ -1,6 +1,9 @@
+/**
+ * Create Time: 2021/7/14 10:00
+ */
 import java.util.Scanner;
 
-public class FlowControl_0714 {
+public class FlowControl {
 
     /* Java规定，某个类定义的public static void main(String[] args)或public static void main(String[] args)
        是Java程序固定入口方法，Java程序总是从main方法开始执行 */
