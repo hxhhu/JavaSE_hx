@@ -6,7 +6,7 @@ public class ConstructionMethod {
     }
 }
 
-class Student {
+class Persons {
 
     private String name;
 
@@ -21,24 +21,24 @@ class Student {
      * */
 
     /** 2个入参构造方法 */
-    Student(String name,int age) {
+    Persons(String name,int age) {
         this.name = name;
         this.age = age;
     }
 
     /** 1个入参构造方法 */
-    Student(String name) {
+    Persons(String name) {
         this.name = name;
         this.age = 22;
     }
 
     /** 1个入参构造方法 */
-    Student(int age) {
+    Persons(int age) {
         this.name = "郝宵";
         this.age = age;
     }
 
     /** 0个入参构造方法 */
-    Student() {
+    Persons() {
     }
 }
