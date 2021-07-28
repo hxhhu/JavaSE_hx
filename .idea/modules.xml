@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JavaSE_01/JavaSE_01.iml" filepath="$PROJECT_DIR$/JavaSE_01/JavaSE_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSE_Basic/JavaSE_Basic.iml" filepath="$PROJECT_DIR$/JavaSE_Basic/JavaSE_Basic.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaSE_Collection/JavaSE_Collection.iml" filepath="$PROJECT_DIR$/JavaSE_Collection/JavaSE_Collection.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaSE_hx.iml" filepath="$PROJECT_DIR$/JavaSE_hx.iml" />
     </modules>

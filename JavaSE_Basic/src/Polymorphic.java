@@ -3,24 +3,27 @@
  */
 
 public class Polymorphic {
-    /**
-     * 在继承关系中，子类如果定义了一个与父类方法签名完全相同的方法，被称为覆写（Override）。
-     * 例如，在PersonPoly中定义了run()方法；
-     * 在子类StudentPloy中，覆写这个run()方法
-     * */
 }
+/**
+ * 在继承关系中，子类如果定义了一个与父类方法签名完全相同的方法，被称为覆写（Override）。
+ * 例如，在PersonPoly中定义了run()方法；
+ * 在子类StudentPloy中，覆写这个run()方法
+ * */
 
 class PersonPoly {
     String name;
+
     public void run() {
         System.out.println("This is PersonPoly.run");
     }
 }
 
+/**
+ * 如果方法签名相同，并且返回值相同，就是Override。加上Override可以让编译器检查是否进行了正确的覆写。
+ * */
 class StudentPloy extends PersonPoly {
     @Override
-    //如果方法签名相同，并且返回值相同，就是Override。加上Override可以让编译器检查是否进行了正确的覆写。
-    public void run() {
+        public void run() {
         System.out.println("This is StudentPoly.run");
     }
     // public void run(String s){...}  不是Override 参数不同
@@ -36,17 +39,18 @@ class StudentPloy extends PersonPoly {
  *
  * 在必要的情况下，我们可以覆写Object的这几个方法。例:
  * */
-class PersonPolyObject{
+class PersonPolyObject {
     String name;
+
     @Override   // 显示更有意义的字符串
-    public String toString(){
-        return "PersonPolyObject:name="+name;
+    public String toString() {
+        return "PersonPolyObject:name=" + name;
     }
 
     @Override    // 比较是否相等
-    public boolean equals(Object o){
+    public boolean equals(Object o) {
         // 当且仅当o为Person类型:
-        if(o instanceof PersonPoly){
+        if (o instanceof PersonPoly) {
             PersonPoly p = (PersonPoly) o;
             // 并且name字段相同时，返回true:
             return this.name.equals(p.name);
@@ -55,7 +59,7 @@ class PersonPolyObject{
     }
 
     @Override   // 计算hash
-    public int hashCode(){
+    public int hashCode() {
         return this.name.hashCode();
     }
 
@@ -66,7 +70,8 @@ class PersonPolyObject{
  *      用final修饰的类不能被继承;
  *      用final修饰的字段在初始化后不能被修改;
  * */
-final class PersonFinal{
+final class PersonFinal {
     protected int age;
+
     public final String name = "郝宵";
 }
