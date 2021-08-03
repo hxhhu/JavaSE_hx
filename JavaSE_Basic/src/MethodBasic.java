@@ -3,14 +3,14 @@
  */
 public class MethodBasic {
     public static void main(String[] args) {
-        Person hao = new Person();
+        PersonMethod hao = new PersonMethod();
     }
 }
 
     /**
     * 【定义】：一个class可以包含多个field，例如，我们给Person类就定义了几个field：
     * */
- class Person {
+ class PersonMethod {
     /**
      * 【问题】：直接操作field，易造成逻辑混乱。
      * 【解决办法】：为了避免外部代码直接访问field，可用private修饰，拒绝外部访问

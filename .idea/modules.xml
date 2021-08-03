@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaSE_Basic/JavaSE_Basic.iml" filepath="$PROJECT_DIR$/JavaSE_Basic/JavaSE_Basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSE_CoreClass/JavaSE_CoreClass.iml" filepath="$PROJECT_DIR$/JavaSE_CoreClass/JavaSE_CoreClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSE_Exception/JavaSE_Exception.iml" filepath="$PROJECT_DIR$/JavaSE_Exception/JavaSE_Exception.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaSE_hx.iml" filepath="$PROJECT_DIR$/JavaSE_hx.iml" />
     </modules>
   </component>

@@ -1,3 +1,5 @@
+package src;
+
 import java.beans.BeanInfo;
 import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
@@ -26,30 +28,40 @@ public class JavaBean {
     }
 }
 
- /**
-  *  【定义】: 符合以下写法的class称为JavaBean：
-  */
+/**
+ *  【定义】: 符合以下写法的class称为JavaBean：
+ */
 class Person {
-    private String name;
+   private String name;
 
-    private boolean child;
+   private boolean child;
+
+   private int age;
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 
     public String getName() {
-        return this.name;
-    }
+       return this.name;
+   }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+   public void setName(String name) {
+       this.name = name;
+   }
 
-     // boolean的读方法较特殊，命名为isXxx
-    public boolean isChild() {
-        return child;
-    }
+    // boolean的读方法较特殊，命名为isXxx
+   public boolean isChild() {
+       return child;
+   }
 
-    public void setChild(boolean child) {
-        this.child = child;
-    }
+   public void setChild(boolean child) {
+       this.child = child;
+   }
 }
 /**
  * 【作用】：JavaBean主要用来传递数据，即把一组数据组合成一个JavaBean便于传输。

@@ -3,7 +3,7 @@
  */
 public class ReferenceParameter {
     public static void main(String[] args){
-        Person person = new Person();
+        PersonExtends person = new PersonExtends();
         int n = 22;
         String name = "郝宵";
         person.setName(name);
